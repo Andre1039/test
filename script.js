@@ -32,7 +32,7 @@
 /* Клавиша нажата и опущена */
 
 document.querySelector('.keyboard').onkeypress = function (event) {
-    console.log('keyDown');
+    // console.log('keyDown');
     // console.log('charCode: ' + event.charCode);
     // console.log('code: ' + event.code);
     // console.log('key: ' + event.key);
@@ -67,7 +67,7 @@ document.querySelector('.keyboard').onkeypress = function (event) {
         m:'p'
     }
 
-    document.querySelector('.keyboard').value = shake[event.key]
+    document.querySelector('.keyboard').value += shake[event.key]
 
     return false;
 }
